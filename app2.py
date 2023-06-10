@@ -5,9 +5,7 @@ from flask_restful import Resource, Api
 import flask_restful
 import joblib as joblib
 from flask import Flask, request, jsonify
-import sys
 
-sys.modules['sklearn.externals.joblib'] = joblib
 
 
 app = Flask(__name__)
